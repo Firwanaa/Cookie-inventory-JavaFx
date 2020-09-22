@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>    
+
+<BorderPane id="AnchorPane" xmlns:fx="http://javafx.com/fxml/1" fx:controller="firwanaa.Assign5FXMLController">
+    
+    <top>
+        <HBox style="
+            -fx-padding: 5px;
+                            ">
+            <Label fx:id="lblselect" text="Select Cookie" style="-fx-padding: 0 5 0 0;"/>
+            <ComboBox  fx:id="comboxMenue" prefWidth="130.0">   
+            
+            </ComboBox>             
+
+        </HBox>
+    </top>
+    
+    <center>
+        <GridPane>
+            <BorderPane>
+                <left>
+                    <VBox style=" 
+                        -fx-border-color:green; 
+                        -fx-border-width: 2; 
+                        -fx-border-style: dashed;
+                        -fx-padding: 5px;
+                        -fx-border-insets: 5px;
+                        -fx-background-insets: 0px;">
+                        <Label fx:id="lblSell" text="Enter Quantity Sold" />
+                        <TextField fx:id="txtfSell" maxWidth="Infinity" />
+                        <Button fx:id="btnSell" text="_Sell" mnemonicParsing="true" maxWidth="Infinity" />
+                    </VBox> 
+                </left>
+              
+                <right>
+                      <VBox style=" 
+                        -fx-border-color:green; 
+                        -fx-border-width: 2; 
+                        -fx-border-style: dashed;
+                        -fx-padding: 5px;
+                        -fx-border-insets: 5px;
+                        -fx-background-insets: 0px;">
+                        <Label fx:id="lblAdd"  text="Enter Quantity Backed" />
+                        <TextField fx:id="txtfAdd" maxWidth="Infinity" />
+                        <Button fx:id="btnAdd" text="_Add" mnemonicParsing="true" maxWidth="Infinity" />
+                         </VBox>
+                </right>
+            </BorderPane>
+        </GridPane>
+    </center>
+    
+    <bottom>
+        <BorderPane>
+            <right>
+                <HBox>
+                <Button fx:id="btnExit" text="_Exit" mnemonicParsing="true" style="
+                    -fx-stroke: dimgrey;
+                    -fx-fill: dimgrey;
+                    -fx-font-size: 20;
+                    -fx-translate-y: -1;"
+                                         />
+                <Button fx:id="btnPrint" text="_Print" mnemonicParsing="true" style="
+                    -fx-stroke: dimgrey;
+                    -fx-fill: dimgrey;
+                    -fx-font-size: 20;
+                    -fx-translate-y: -1;"
+                                         />
+                 </HBox>
+            </right>
+        </BorderPane>
+    </bottom>
+        
+</BorderPane>
+
+  
+    
+  
